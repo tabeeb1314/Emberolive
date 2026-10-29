@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember &amp; Olive | Modern American Bistro &amp; Wood-Fired Kitchen — Austin, TX</title>
+  <meta name="description" content="Ember &amp; Olive is a contemporary Modern American bistro concept in Austin, Texas featuring live post-oak wood-fired steaks, handmade brass-die pasta, seasonal Hill Country produce, and signature desserts. Fictional portfolio project.">
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ember &amp; Olive — Modern American Bistro (Austin, TX Portfolio Concept)">
+  <meta property="og:description" content="Where Texas post-oak fire meets harvest-pressed olive oil. Wood-fired dishes, handcrafted pasta, seasonal ingredients, and warm hospitality.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ember &amp; Olive | Modern American Bistro — Austin, Texas">
+  <meta name="twitter:description" content="Fictional restaurant website portfolio concept showcasing custom editorial UI/UX design, accessible WAI-ARIA tabs, and responsive front-end craftsmanship.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Editorial Typography: Cormorant Garamond (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <!-- Skip Navigation for Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Discreet Portfolio Concept Ribbon -->
+  <div class="portfolio-ribbon" role="region" aria-label="Portfolio Concept Notice">
+    <div class="portfolio-ribbon__inner">
+      <span class="portfolio-ribbon__badge">
+        <span class="portfolio-ribbon__dot" aria-hidden="true"></span>
+        Fictional Portfolio Concept · Sample Content Only
+      </span>
+      <div class="portfolio-ribbon__meta">
+        <span>418 W. 2nd Street, Suite 110, Austin, TX 78701 (Sample Address)</span>
+        <span>Tue–Sun · Wood-Fired Dinner &amp; Weekend Aperitivo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       A. Navigation Header
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-bar">
+      <a href="#top" class="brand-wordmark" id="brand-home-link" aria-label="Ember and Olive Home">
+        <svg class="brand-wordmark__emblem" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="4" fill="#1C1A17"/>
+          <path d="M32 11C25 21 20 28 20 36C20 42.6 25.4 48 32 48C38.6 48 44 42.6 44 36C44 28 39 21 32 11ZM32 43C28.1 43 25 39.9 25 36C25 31.8 28.2 26.8 32 21.2C35.8 26.8 39 31.8 39 36C39 39.9 35.9 43 32 43Z" fill="#B8502B"/>
+          <path d="M32 27C29.5 31 28 33.8 28 36.2C28 38.4 29.8 40.2 32 40.2C34.2 40.2 36 38.4 36 36.2C36 33.8 34.5 31 32 27Z" fill="#FAF6F0"/>
+          <path d="M18 50C24 53 40 53 46 50" stroke="#6B7D5C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="brand-wordmark__text">
+          <span class="brand-wordmark__name">Ember &amp; Olive</span>
+          <span class="brand-wordmark__sub">Austin · Modern American Bistro</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#signatures" class="nav-link">Signatures</a></li>
+          <li><a href="#menu" class="nav-link">Full Menu</a></li>
+          <li><a href="#experience" class="nav-link">Dining Room</a></li>
+          <li><a href="#hours-location" class="nav-link">Hours &amp; Location</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#reservations" class="btn btn--primary btn--sm btn--header-reserve">Reserve a Table</a>
+        <button
+          type="button"
+          class="mobile-nav-toggle"
+          id="mobile-nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="hamburger-box" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-nav-drawer" hidden>
+      <nav aria-label="Mobile Navigation">
+        <ul class="mobile-drawer__list">
+          <li class="mobile-drawer__item">
+            <a href="#story" class="mobile-drawer__link">Our Story <span>01</span></a>
+          </li>
+          <li class="mobile-drawer__item">
+            <a href="#signatures" class="mobile-drawer__link">Signature Dishes <span>02</span></a>
+          </li>
+          <li class="mobile-drawer__item">
+            <a href="#menu" class="mobile-drawer__link">Full Food &amp; Drink Menu <span>03</span></a>
+          </li>
+          <li class="mobile-drawer__item">
+            <a href="#experience" class="mobile-drawer__link">The Dining Experience <span>04</span></a>
+          </li>
+          <li class="mobile-drawer__item">
+            <a href="#hours-location" class="mobile-drawer__link">Opening Hours &amp; Location <span>05</span></a>
+          </li>
+          <li class="mobile-drawer__item">
+            <a href="#contact" class="mobile-drawer__link">Contact &amp; Private Events <span>06</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer__footer">
+        <a href="#reservations" class="btn btn--primary">Reserve a Table</a>
+        <div class="mobile-drawer__meta">
+          <span>Second Street District · Austin, TX (Sample)</span>
+          <span>(512) 555-0194</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         B. Hero Section
+         ====================================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__location-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 21s-7-6.5-7-12a7 7 0 1 1 14 0c0 5.5-7 12-7 12z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              <span>Second Street District · Austin, Texas</span>
+            </div>
+
+            <h1 class="hero__title" id="hero-heading">
+              Where Post-Oak Fire Meets <em>Harvest-Pressed</em> Olive Oil.
+            </h1>
+
+            <p class="hero__copy">
+              An intimate Modern American bistro rooted in Central Texas seasonality. Each evening, our kitchen cooks over live post-oak and pecan embers—turning out dry-aged prime steaks, daily extruded brass-die pasta, and wood-roasted harvest plates meant to be shared over unhurried conversation.
+            </p>
+
+            <div class="hero__cta-group">
+              <a href="#reservations" class="btn btn--primary">Reserve a Table</a>
+              <a href="#menu" class="hero__secondary-link">
+                Explore Our Menu
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="hero__ledger" aria-label="Dining Experience Highlights">
+              <div class="hero__ledger-item">
+                <span class="hero__ledger-label">The Hearth</span>
+                <span class="hero__ledger-value">Live Post-Oak &amp; Pecan</span>
+              </div>
+              <div class="hero__ledger-item">
+                <span class="hero__ledger-label">The Pasta Room</span>
+                <span class="hero__ledger-value">Milled &amp; Extruded Daily</span>
+              </div>
+              <div class="hero__ledger-item">
+                <span class="hero__ledger-label">Evening Service</span>
+                <span class="hero__ledger-value">Tue–Sun in Downtown Austin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <figure class="editorial-media hero__figure">
+              <img
+                src="assets/hero-hearth-table.jpg"
+                alt="Candlelit wooden bistro table at Ember and Olive in Austin with sliced wood-fired ribeye steak, handmade tagliolini pasta, rustic sourdough bread, olive oil cruet, and a glowing wood hearth in the background"
+                width="1120"
+                height="630"
+                fetchpriority="high"
+              >
+              <div class="editorial-media__fallback" aria-hidden="true">
+                <span class="editorial-media__fallback-sub">Ember &amp; Olive · Austin, TX</span>
+                <span class="editorial-media__fallback-title">Evening Table by the Post-Oak Hearth</span>
+              </div>
+            </figure>
+            <div class="hero__caption-bar">
+              <span>Hearth-seared prime ribeye, saffron tagliolini &amp; country sourdough</span>
+              <span class="hero__caption-tag">Autumn / Winter Harvest Menu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         C. Restaurant Story Section
+         ====================================================================== -->
+    <section class="story-section" id="story" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-visual-col">
+            <figure class="editorial-media story-figure">
+              <img
+                src="assets/story-chef-hearth.jpg"
+                alt="Chef at Ember and Olive tending a glowing post-oak wood-fired oven with copper pans, fresh olive branches, and rosemary on a butcher block counter"
+                width="840"
+                height="630"
+                loading="lazy"
+              >
+              <div class="editorial-media__fallback" aria-hidden="true">
+                <span class="editorial-media__fallback-sub">01 / Culinary Philosophy</span>
+                <span class="editorial-media__fallback-title">The Live Post-Oak Hearth</span>
+              </div>
+            </figure>
+            <div class="story-note-box">
+              <strong>“Fire is our primary seasoning; olive oil is our finishing note.”</strong>
+              Every morning begins at 7:00 AM as our bakers pull naturally leavened country loaves from the residual heat of last night’s embers and our pasta makers roll golden forty-yolk dough by hand.
+            </div>
+          </div>
+
+          <div class="story-text-col">
+            <span class="eyebrow">01 / Our Philosophy &amp; Craft</span>
+            <h2 class="section-title" id="story-heading">
+              Elemental Texas Cooking, Guided by <em>Mediterranean</em> Restraint.
+            </h2>
+
+            <div class="story-narrative">
+              <div>
+                <p>
+                  Ember &amp; Olive was conceived around a simple culinary dialogue: the deep, resinous warmth of Central Texas post-oak fire paired with the bright, peppery clarity of early-harvest Hill Country olive oil. Rather than masking ingredients behind heavy sauces, we let live embers blister, caramelize, and concentrate what local growers bring to our back door each morning.
+                </p>
+                <p>
+                  Our meats are sourced from family-run Texas pastures and dry-aged in-house for 35 days before meeting our custom iron grill grates suspended over white-hot oak coals.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Beside the hearth sits our glass-enclosed pasta table, where heritage durum semolina and Texas pasture-raised eggs are shaped into delicate agnolotti, saffron tagliolini, and ridged bronze-die rigatoni.
+                </p>
+                <p>
+                  Whether you join us at the eight-seat hearth counter for a spontaneous glass of Sangiovese and charred flatbread, or gather around a walnut table for a full three-course supper, the pace is warm, attentive, and unhurried.
+                </p>
+              </div>
+            </div>
+
+            <div class="story-pillars">
+              <div class="story-pillar">
+                <span class="story-pillar__num">PILLAR I</span>
+                <h3 class="story-pillar__title">Seasoned Oak &amp; Pecan</h3>
+                <p class="story-pillar__desc">
+                  Split Central Texas post-oak and orchard pecan logs burn down to clean, aromatic coals for precise heat across every course.
+                </p>
+              </div>
+              <div class="story-pillar">
+                <span class="story-pillar__num">PILLAR II</span>
+                <h3 class="story-pillar__title">Daily Hand-Rolled Pasta</h3>
+                <p class="story-pillar__desc">
+                  Stone-milled heirloom wheat, rich golden yolks, and slow-simmered stocks crafted fresh in our kitchen every morning.
+                </p>
+              </div>
+              <div class="story-pillar">
+                <span class="story-pillar__num">PILLAR III</span>
+                <h3 class="story-pillar__title">Hill Country Harvest</h3>
+                <p class="story-pillar__desc">
+                  Cold-pressed Arbequina olive oil from Dripping Springs, Fredericksburg stone fruit, and Gulf Coast dayboat catch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         D. Signature Dishes Section
+         ====================================================================== -->
+    <section class="signatures-section" id="signatures" aria-labelledby="signatures-heading">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="eyebrow">02 / From the Hearth &amp; Pasta Table</span>
+            <h2 class="section-title" id="signatures-heading">
+              Signature <em>Compositions</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Five defining plates from our current seasonal menu—balancing wood-fired char, bright acidity, and hand-crafted texture.
+          </p>
+        </div>
+
+        <div class="signatures-editorial-layout">
+          <!-- Featured Dish 1: Prime Ribeye -->
+          <article class="signature-spotlight">
+            <figure class="editorial-media signature-spotlight__media">
+              <img
+                src="assets/dish-prime-ribeye.jpg"
+                alt="14oz wood-fired dry-aged prime ribeye steak sliced on a dark stoneware plate with melted herb bone marrow butter, charred cipollini onions, and sea salt flakes"
+                width="760"
+                height="570"
+                loading="lazy"
+              >
+              <div class="editorial-media__fallback" aria-hidden="true">
+                <span class="editorial-media__fallback-sub">Signature Main Course</span>
+                <span class="editorial-media__fallback-title">14oz Dry-Aged Prime Ribeye</span>
+              </div>
+            </figure>
+            <div class="signature-spotlight__body">
+              <div>
+                <div class="dish-meta-row">
+                  <span class="dish-tag dish-tag--ember">Hearth Signature · Gluten-Free</span>
+                  <span class="dish-price">$58</span>
+                </div>
+                <h3 class="signature-spotlight__title">14oz Dry-Aged Prime Ribeye</h3>
+                <p class="signature-spotlight__desc">
+                  35-day dry-aged Texas prime beef seared over white-hot post-oak embers and basted with rosemary branches. Served sliced on warm stoneware with smoked bone marrow herb butter, hearth-charred cipollini onions, and flaky Maldon sea salt.
+                </p>
+              </div>
+              <div class="signature-spotlight__pairing">
+                <span>Suggested Pour: 2020 Texas High Plains Tempranillo Reserve ($18/gl)</span>
+                <button type="button" class="dish-jump-btn" data-jump-category="mains">
+                  View in Main Courses →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Quartet of 4 Additional Signature Dishes -->
+          <div class="signature-quartet">
+            <!-- Signature Dish 2 -->
+            <article class="signature-item">
+              <figure class="editorial-media signature-item__media">
+                <img
+                  src="assets/dish-saffron-tagliolini.jpg"
+                  alt="Handmade golden saffron tagliolini pasta twirled in a cream ceramic bowl with braised wild boar ragu, shaved Parmigiano-Reggiano, and fresh thyme"
+                  width="760"
+                  height="570"
+                  loading="lazy"
+                >
+                <div class="editorial-media__fallback" aria-hidden="true">
+                  <span class="editorial-media__fallback-sub">Handmade Pasta</span>
+                  <span class="editorial-media__fallback-title">Hand-Cut Saffron Tagliolini</span>
+                </div>
+              </figure>
+              <div class="signature-item__content">
+                <div>
+                  <div class="dish-meta-row">
+                    <span class="dish-tag">Hand-Cut Pasta</span>
+                    <span class="dish-price">$32</span>
+                  </div>
+                  <h3 class="signature-item__title">Hand-Cut Saffron Tagliolini</h3>
+                  <p class="signature-item__desc">
+                    Forty-yolk saffron ribbons tossed with 8-hour braised Texas wild boar ragù, crushed juniper berry, aged 24-month Parmigiano-Reggiano, and lemon thyme.
+                  </p>
+                </div>
+                <button type="button" class="dish-jump-btn" data-jump-category="pasta">
+                  View in Pasta Menu →
+                </button>
+              </div>
+            </article>
+
+            <!-- Signature Dish 3 -->
+            <article class="signature-item">
+              <figure class="editorial-media signature-item__media">
+                <img
+                  src="assets/dish-red-snapper.jpg"
+                  alt="Crispy-skin wood-roasted Texas Gulf red snapper fillet in a shallow stoneware bowl with blistered cherry tomatoes, green Castelvetrano olives, fennel, and golden saffron broth"
+                  width="760"
+                  height="570"
+                  loading="lazy"
+                >
+                <div class="editorial-media__fallback" aria-hidden="true">
+                  <span class="editorial-media__fallback-sub">Gulf Coast Catch</span>
+                  <span class="editorial-media__fallback-title">Wood-Roasted Gulf Red Snapper</span>
+                </div>
+              </figure>
+              <div class="signature-item__content">
+                <div>
+                  <div class="dish-meta-row">
+                    <span class="dish-tag">Wood-Fired · Gluten-Free</span>
+                    <span class="dish-price">$42</span>
+                  </div>
+                  <h3 class="signature-item__title">Wood-Roasted Gulf Red Snapper</h3>
+                  <p class="signature-item__desc">
+                    Crispy-skin dayboat Gulf snapper roasted in the hearth oven with blistered heirloom cherry tomatoes, crushed Castelvetrano olives, shaved bulb fennel, and saffron-vermouth fumet.
+                  </p>
+                </div>
+                <button type="button" class="dish-jump-btn" data-jump-category="mains">
+                  View in Main Courses →
+                </button>
+              </div>
+            </article>
+
+            <!-- Signature Dish 4 -->
+            <article class="signature-item">
+              <figure class="editorial-media signature-item__media">
+                <img
+                  src="assets/dish-peach-burrata.jpg"
+                  alt="Wood-charred Fredericksburg peaches and creamy artisan burrata on a warm cream stoneware plate with crushed pistachios, honeycomb, olive oil drizzle, and fresh basil"
+                  width="760"
+                  height="570"
+                  loading="lazy"
+                >
+                <div class="editorial-media__fallback" aria-hidden="true">
+                  <span class="editorial-media__fallback-sub">Seasonal Starter</span>
+                  <span class="editorial-media__fallback-title">Charred Texas Peach &amp; Burrata</span>
+                </div>
+              </figure>
+              <div class="signature-item__content">
+                <div>
+                  <div class="dish-meta-row">
+                    <span class="dish-tag">Vegetarian · Gluten-Free</span>
+                    <span class="dish-price">$21</span>
+                  </div>
+                  <h3 class="signature-item__title">Charred Fredericksburg Peach &amp; Burrata</h3>
+                  <p class="signature-item__desc">
+                    Ember-blistered Hill Country yellow peaches, creamy pugliese burrata, roasted Bronte pistachios, raw wildflower honeycomb, purple basil, and peppery Arbequina olive oil.
+                  </p>
+                </div>
+                <button type="button" class="dish-jump-btn" data-jump-category="starters">
+                  View in Starters →
+                </button>
+              </div>
+            </article>
+
+            <!-- Signature Dish 5 -->
+            <article class="signature-item">
+              <figure class="editorial-media signature-item__media">
+                <img
+                  src="assets/dish-fig-galette.jpg"
+                  alt="Warm rustic wood-baked black mission fig and almond frangipane galette on dark ceramic plate with a scoop of Texas pecan gelato and golden olive oil drizzle"
+                  width="760"
+                  height="570"
+                  loading="lazy"
+                >
+                <div class="editorial-media__fallback" aria-hidden="true">
+                  <span class="editorial-media__fallback-sub">Hearth Pastry</span>
+                  <span class="editorial-media__fallback-title">Roasted Black Mission Fig Galette</span>
+                </div>
+              </figure>
+              <div class="signature-item__content">
+                <div>
+                  <div class="dish-meta-row">
+                    <span class="dish-tag dish-tag--ember">Signature Dessert · Vegetarian</span>
+                    <span class="dish-price">$16</span>
+                  </div>
+                  <h3 class="signature-item__title">Roasted Black Mission Fig Galette</h3>
+                  <p class="signature-item__desc">
+                    Flaky cultured-butter pastry folded over toasted almond frangipane and caramelized black mission figs, baked in the hearth and finished with Texas pecan-bourbon gelato.
+                  </p>
+                </div>
+                <button type="button" class="dish-jump-btn" data-jump-category="desserts">
+                  View in Desserts →
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         E. Full Food Menu Section
+         ====================================================================== -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="eyebrow">03 / Evening Service &amp; Cellar</span>
+            <h2 class="section-title" id="menu-heading">
+              Full Seasonal <em>Menu</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Use the course tabs or dietary filters below to explore our current offerings. Use Left and Right arrow keys when focused on the tabs for keyboard navigation.
+          </p>
+        </div>
+
+        <div class="menu-controls">
+          <!-- Accessible WAI-ARIA Tablist -->
+          <div class="menu-tablist" role="tablist" aria-label="Menu Categories">
+            <button
+              type="button"
+              class="menu-tab"
+              role="tab"
+              id="tab-starters"
+              aria-selected="true"
+              aria-controls="panel-starters"
+              tabindex="0"
+              data-category="starters"
+            >
+              Starters
+            </button>
+            <button
+              type="button"
+              class="menu-tab"
+              role="tab"
+              id="tab-mains"
+              aria-selected="false"
+              aria-controls="panel-mains"
+              tabindex="-1"
+              data-category="mains"
+            >
+              Main Courses
+            </button>
+            <button
+              type="button"
+              class="menu-tab"
+              role="tab"
+              id="tab-pasta"
+              aria-selected="false"
+              aria-controls="panel-pasta"
+              tabindex="-1"
+              data-category="pasta"
+            >
+              Pasta
+            </button>
+            <button
+              type="button"
+              class="menu-tab"
+              role="tab"
+              id="tab-desserts"
+              aria-selected="false"
+              aria-controls="panel-desserts"
+              tabindex="-1"
+              data-category="desserts"
+            >
+              Desserts
+            </button>
+            <button
+              type="button"
+              class="menu-tab"
+              role="tab"
+              id="tab-drinks"
+              aria-selected="false"
+              aria-controls="panel-drinks"
+              tabindex="-1"
+              data-category="drinks"
+            >
+              Drinks
+            </button>
+          </div>
+
+          <!-- Secondary Dietary Filter Chips -->
+          <div class="menu-dietary-bar" role="group" aria-label="Filter current course by dietary attribute">
+            <span class="menu-dietary-label">Filter:</span>
+            <button type="button" class="dietary-chip is-active" data-diet="all" aria-pressed="true">All Items</button>
+            <button type="button" class="dietary-chip" data-diet="wood-fired" aria-pressed="false">Wood-Fired</button>
+            <button type="button" class="dietary-chip" data-diet="vegetarian" aria-pressed="false">Vegetarian</button>
+            <button type="button" class="dietary-chip" data-diet="gf" aria-pressed="false">Gluten-Free</button>
+          </div>
+        </div>
+
+        <!-- 1. STARTERS PANEL -->
+        <div
+          class="menu-panel is-active"
+          id="panel-starters"
+          role="tabpanel"
+          aria-labelledby="tab-starters"
+          data-category-panel="starters"
+        >
+          <div class="menu-panel__header">
+            <h3 class="menu-panel__title">Starters &amp; Hearth Shareables</h3>
+            <span class="menu-panel__subtitle">Designed to open the palate and share across the table</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-entry" data-tags="wood-fired,vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Hearth-Blistered Sourdough &amp; Whipped Bone Marrow</h4>
+                <span class="menu-entry__price">$15</span>
+              </div>
+              <p class="menu-entry__desc">Naturally leavened country loaf charred over oak coals, served with smoked tallow-honey butter, pickled mustard seeds, and flaky sea salt. (Cultured herb butter available for vegetarian guests.)</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Wood-Fired</span>
+                <span class="menu-badge">Vegetarian Option</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Charred Fredericksburg Peach &amp; Burrata</h4>
+                <span class="menu-entry__price">$21</span>
+              </div>
+              <p class="menu-entry__desc">Ember-roasted yellow peaches, artisan pugliese burrata, crushed Bronte pistachios, raw Central Texas honeycomb, purple basil, and early-harvest Arbequina olive oil.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Signature</span>
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Oak-Grilled Spanish Octopus</h4>
+                <span class="menu-entry__price">$24</span>
+              </div>
+              <p class="menu-entry__desc">Crispy charred tentacle over warm fingerling potato confit, smoky chorizo vinaigrette, celery heart, and cured black Gaeta olives.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Texas Wagyu Beef Carpaccio</h4>
+                <span class="menu-entry__price">$23</span>
+              </div>
+              <p class="menu-entry__desc">Paper-thin Lockhart wagyu sirloin, charred scallion aioli, crispy capers, pickled Beech mushrooms, 30-month Parmigiano-Reggiano, and cold-pressed olive oil.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Ember-Roasted Heirloom Carrots &amp; Labneh</h4>
+                <span class="menu-entry__price">$17</span>
+              </div>
+              <p class="menu-entry__desc">Slow-charred rainbow carrots glazed in pomegranate molasses over whipped goat milk labneh, toasted sesame dukkah, and fresh mint.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Wood-Fired</span>
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Crispy Artichoke &amp; Meyer Lemon Aioli</h4>
+                <span class="menu-entry__price">$18</span>
+              </div>
+              <p class="menu-entry__desc">Flash-fried baby violetto artichokes with blistered padrón peppers, shaved pecorino romano, fried sage leaves, and roasted garlic-lemon emulsion.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 2. MAIN COURSES PANEL -->
+        <div
+          class="menu-panel"
+          id="panel-mains"
+          role="tabpanel"
+          aria-labelledby="tab-mains"
+          data-category-panel="mains"
+          hidden
+        >
+          <div class="menu-panel__header">
+            <h3 class="menu-panel__title">Main Courses &amp; Prime Cuts</h3>
+            <span class="menu-panel__subtitle">Seared over seasoned Texas post-oak &amp; pecan embers</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">14oz Dry-Aged Prime Ribeye</h4>
+                <span class="menu-entry__price">$58</span>
+              </div>
+              <p class="menu-entry__desc">35-day dry-aged Texas beef, smoked bone marrow herb butter, hearth-charred cipollini onions, rosemary ash, and Maldon sea salt.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Signature Cut</span>
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Wood-Roasted Gulf Red Snapper</h4>
+                <span class="menu-entry__price">$42</span>
+              </div>
+              <p class="menu-entry__desc">Crispy-skin dayboat Gulf snapper, blistered heirloom cherry tomatoes, Castelvetrano olives, shaved bulb fennel, and saffron-vermouth fumet.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Signature</span>
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">8oz Center-Cut Prime Filet Mignon</h4>
+                <span class="menu-entry__price">$54</span>
+              </div>
+              <p class="menu-entry__desc">Oak-grilled pasture-raised tenderloin served with black truffle potato pavé, charred broccolini, and aged Madeira-shallot jus.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Pecan-Smoked Rohan Duck Breast</h4>
+                <span class="menu-entry__price">$39</span>
+              </div>
+              <p class="menu-entry__desc">Crisp lavender-honey lacquered skin, parsnip-vanilla purée, roasted black mission figs, wilted Swiss chard, and sour cherry gastrique.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Double-Cut Berkshire Pork Chop</h4>
+                <span class="menu-entry__price">$38</span>
+              </div>
+              <p class="menu-entry__desc">12oz heritage bone-in chop brined in apple cider, grilled over oak embers with charred stone-ground polenta, pickled mustard greens, and sage pan jus.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Hearth-Charred Maitake &amp; Black Beluga Lentils</h4>
+                <span class="menu-entry__price">$31</span>
+              </div>
+              <p class="menu-entry__desc">Wood-pressed Texas maitake mushroom cluster basted in rosemary-garlic oil over braised beluga lentils, smoked sunchoke purée, and crispy shallots.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Wood-Fired</span>
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 3. PASTA PANEL -->
+        <div
+          class="menu-panel"
+          id="panel-pasta"
+          role="tabpanel"
+          aria-labelledby="tab-pasta"
+          data-category-panel="pasta"
+          hidden
+        >
+          <div class="menu-panel__header">
+            <h3 class="menu-panel__title">Handcrafted Daily Pasta</h3>
+            <span class="menu-panel__subtitle">Extruded with bronze dies &amp; hand-rolled every morning (Gluten-free chickpea rigatoni available upon request)</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-entry" data-tags="gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Hand-Cut Saffron Tagliolini</h4>
+                <span class="menu-entry__price">$32</span>
+              </div>
+              <p class="menu-entry__desc">Forty-yolk saffron ribbons, 8-hour braised Texas wild boar ragù, crushed juniper, 24-month Parmigiano-Reggiano, and fresh lemon thyme.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Signature Pasta</span>
+                <span class="menu-badge">GF Pasta Available</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Smoked Ricotta &amp;Sweet Corn Agnolotti</h4>
+                <span class="menu-entry__price">$28</span>
+              </div>
+              <p class="menu-entry__desc">Delicate hand-pinched pasta parcels filled with house-smoked sheep’s milk ricotta, tossed in brown butter, blistered sweet corn, chanterelles, and tarragon.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Wood-Fired Ricotta</span>
+                <span class="menu-badge">Vegetarian</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Squid Ink Lumache &amp; Gulf Blue Crab</h4>
+                <span class="menu-entry__price">$34</span>
+              </div>
+              <p class="menu-entry__desc">Ridged black pasta shells, jumbo lump Texas Gulf blue crab, roasted cherry tomato passata, Calabrian chili oil, garlic breadcrumbs, and flat-leaf parsley.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Gulf Seafood</span>
+                <span class="menu-badge">GF Pasta Available</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Rigatoni alla Vodka Affumicata</h4>
+                <span class="menu-entry__price">$26</span>
+              </div>
+              <p class="menu-entry__desc">Bronze-die extruded rigatoni in a hearth-roasted San Marzano tomato and Tito’s vodka cream sauce, finished with whipped stracciatella and basil oil.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">GF Pasta Available</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Chestnut Pappardelle &amp; Roasted Wild Mushrooms</h4>
+                <span class="menu-entry__price">$29</span>
+              </div>
+              <p class="menu-entry__desc">Wide roasted-chestnut flour ribbons, hearth-seared cremini and oyster mushrooms, aged thyme pecorino, black garlic emulsion, and crispy sage.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 4. DESSERTS PANEL -->
+        <div
+          class="menu-panel"
+          id="panel-desserts"
+          role="tabpanel"
+          aria-labelledby="tab-desserts"
+          data-category-panel="desserts"
+          hidden
+        >
+          <div class="menu-panel__header">
+            <h3 class="menu-panel__title">Signature Desserts &amp; Hearth Pastry</h3>
+            <span class="menu-panel__subtitle">Crafted by our pastry kitchen with local nuts, orchard fruit, and estate olive oil</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-entry" data-tags="wood-fired,vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Roasted Black Mission Fig Galette</h4>
+                <span class="menu-entry__price">$16</span>
+              </div>
+              <p class="menu-entry__desc">Wood-baked flaky pastry folded over toasted almond frangipane and warm mission figs, served with Texas pecan-bourbon gelato and smoked olive oil drizzle.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Signature Dessert</span>
+                <span class="menu-badge">Wood-Fired</span>
+                <span class="menu-badge">Vegetarian</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Arbequina Olive Oil &amp; Blood Orange Cake</h4>
+                <span class="menu-entry__price">$15</span>
+              </div>
+              <p class="menu-entry__desc">Moist Dripping Springs extra-virgin olive oil sponge, candied blood orange segments, whipped mascarpone crema, and toasted fennel pollen.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Smoked Dark Chocolate Budino</h4>
+                <span class="menu-entry__price">$15</span>
+              </div>
+              <p class="menu-entry__desc">70% Valrhona bittersweet chocolate custard infused with a whisper of post-oak smoke, salted espresso caramel, hazelnut praline crunch, and crème fraîche.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Honey-Thyme Panna Cotta</h4>
+                <span class="menu-entry__price">$14</span>
+              </div>
+              <p class="menu-entry__desc">Silky Hill Country wildflower honey custard, roasted blackberry compote, lemon verbena syrup, and toasted pistachio crumble.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">Gluten-Free</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Artisan Texas &amp; Old World Cheese Flight</h4>
+                <span class="menu-entry__price">$22</span>
+              </div>
+              <p class="menu-entry__desc">Three seasonal selections from Antonelli’s Cheese Shop &amp; European caves, served with quince paste, spiced pecans, and hearth-toasted seed crackers.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Vegetarian</span>
+                <span class="menu-badge">GF Crackers Available</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 5. DRINKS PANEL -->
+        <div
+          class="menu-panel"
+          id="panel-drinks"
+          role="tabpanel"
+          aria-labelledby="tab-drinks"
+          data-category-panel="drinks"
+          hidden
+        >
+          <div class="menu-panel__header">
+            <h3 class="menu-panel__title">Cocktails, Cellar Pours &amp; Zero-Proof Botanicals</h3>
+            <span class="menu-panel__subtitle">Curated to complement wood-fired char and rich handmade pastas</span>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">The Post-Oak Old Fashioned</h4>
+                <span class="menu-entry__price">$18</span>
+              </div>
+              <p class="menu-entry__desc">Garrison Brothers Texas Straight Bourbon fat-washed with toasted brown butter, charred fig demerara, angostura &amp; walnut bitters, smoked over oak stave.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">House Cocktail</span>
+                <span class="menu-badge">Wood-Smoked</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Second Street Dirty Martini</h4>
+                <span class="menu-entry__price">$17</span>
+              </div>
+              <p class="menu-entry__desc">Austin Reserve Gin, dry vermouth, house-cured Castelvetrano olive brine, finished with a droplet of estate Arbequina olive oil and blue-cheese stuffed olives.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Signature Cocktail</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Charred Grapefruit &amp; Mezcal Paloma</h4>
+                <span class="menu-entry__price">$16</span>
+              </div>
+              <p class="menu-entry__desc">Artisanal Oaxaca Espadín Mezcal, hearth-caramelized Rio Star Texas ruby grapefruit juice, lime, agave, and rosemary-smoked sea salt rim.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Wood-Fired Citrus</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">2020 Texas High Plains Tempranillo Reserve</h4>
+                <span class="menu-entry__price">$18 / $72</span>
+              </div>
+              <p class="menu-entry__desc">Bold dark plum, leather, and toasted cedar notes grown at 3,400 feet elevation in the Texas High Plains. Ideal beside dry-aged prime cuts.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Glass / Bottle</span>
+                <span class="menu-badge">Texas Wine</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">2022 Etna Bianco Superiore (Sicily, Italy)</h4>
+                <span class="menu-entry__price">$17 / $68</span>
+              </div>
+              <p class="menu-entry__desc">High-altitude Carricante grown on volcanic soils—crisp white peach, saline minerality, and Meyer lemon zest. Pairs effortlessly with Gulf red snapper.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge">Glass / Bottle</span>
+                <span class="menu-badge">Old World Cellar</span>
+              </div>
+            </article>
+
+            <article class="menu-entry" data-tags="wood-fired,vegetarian,gf">
+              <div class="menu-entry__top">
+                <h4 class="menu-entry__name">Orchard Smoke &amp; Botanical Spritz (Zero-Proof)</h4>
+                <span class="menu-entry__price">$13</span>
+              </div>
+              <p class="menu-entry__desc">House-distilled non-alcoholic rosemary hydrosol, hearth-roasted peach shrub, verjus blanc, and fever-tree club soda.</p>
+              <div class="menu-entry__badges">
+                <span class="menu-badge menu-badge--highlight">Zero-Proof</span>
+                <span class="menu-badge">Vegetarian · GF</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Empty State Notice if Filter has 0 Matches -->
+        <div class="menu-empty-notice" id="menu-empty-notice" role="status">
+          <p>No dishes in this category match the selected dietary filter.</p>
+          <button type="button" class="btn btn--outline btn--sm" id="reset-dietary-btn" style="margin-top:0.75rem;">
+            Show All Dishes in Course
+          </button>
+        </div>
+
+        <div class="menu-footer-note">
+          <span>
+            <strong>Dietary &amp; Allergen Note:</strong> Please inform your server of any food allergies. Because we cook over an open wood hearth, cross-contact with smoke and trace allergens is possible.
+          </span>
+          <span>Sample Portfolio Pricing · USD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         F. Dining Experience Section
+         ====================================================================== -->
+    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header-split" style="border-color: var(--border-dark);">
+          <div>
+            <span class="eyebrow eyebrow--light">04 / Atmosphere &amp; Hospitality</span>
+            <h2 class="section-title" id="experience-heading">
+              Designed for <em>Unhurried</em> Evenings
+            </h2>
+          </div>
+          <p class="section-lead">
+            Warm limewash plaster, olive-hide banquettes, hand-turned walnut tables, and the steady crackle of post-oak embers create a room that feels both architectural and deeply welcoming.
+          </p>
+        </div>
+
+        <div class="experience-hero-frame">
+          <figure class="editorial-media experience-figure">
+            <img
+              src="assets/dining-room-interior.jpg"
+              alt="Intimate dining room at Ember and Olive in Austin featuring warm textured plaster walls, olive-green leather banquettes, custom walnut dining tables, brass pendant lamps, and an open wood-fired kitchen glowing in the background"
+              width="1120"
+              height="630"
+              loading="lazy"
+            >
+            <div class="editorial-media__fallback" aria-hidden="true">
+              <span class="editorial-media__fallback-sub">Second Street District · Austin</span>
+              <span class="editorial-media__fallback-title">The Main Dining Room &amp; Open Hearth</span>
+            </div>
+          </figure>
+          <div class="experience-quote-pane">
+            <div>
+              <span class="eyebrow eyebrow--light">The Room at Dusk</span>
+              <blockquote class="experience-blockquote">
+                “We wanted the dining room to feel like an editorial living room in the Hill Country—where the glow of the hearth replaces harsh overhead light and every table is set for lingering.”
+              </blockquote>
+            </div>
+            <div>
+              <p class="experience-cite">Elena Rostova &amp; Julian Vance · Fictional Founding Partners</p>
+              <p style="font-size:0.84rem; color: var(--text-on-dark-muted); margin-top:0.65rem;">
+                Select a seating setting below to pre-fill your preference in the reservation form.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Three Editorial Atmospheric Zones -->
+        <div class="experience-zones">
+          <article class="experience-zone">
+            <div>
+              <span class="experience-zone__num">SETTING 01</span>
+              <h3 class="experience-zone__title">The Main Dining Room</h3>
+              <p class="experience-zone__copy">
+                Anchored by curved olive-leather banquettes and custom black walnut tables bathed in warm brass pendant light. Ideal for date nights, celebratory suppers, and lingering over a bottle from the cellar.
+              </p>
+            </div>
+            <div class="experience-zone__meta">
+              <span>Parties of 2 to 6 Guests</span>
+              <button type="button" class="zone-select-btn" data-zone-name="Main Dining Room">
+                Prefer This Setting →
+              </button>
+            </div>
+          </article>
+
+          <article class="experience-zone">
+            <div>
+              <span class="experience-zone__num">SETTING 02</span>
+              <h3 class="experience-zone__title">8-Seat Chef’s Hearth Counter</h3>
+              <p class="experience-zone__copy">
+                Front-row counter seating facing our live post-oak grill and pasta station. Watch our chefs sear dry-aged steaks, finish agnolotti in copper pans, and share off-menu hearth tastes.
+              </p>
+            </div>
+            <div class="experience-zone__meta">
+              <span>Parties of 1 to 4 Guests</span>
+              <button type="button" class="zone-select-btn" data-zone-name="8-Seat Hearth Counter">
+                Prefer This Setting →
+              </button>
+            </div>
+          </article>
+
+          <article class="experience-zone">
+            <div>
+              <span class="experience-zone__num">SETTING 03</span>
+              <h3 class="experience-zone__title">The Olive Courtyard &amp; Salon</h3>
+              <p class="experience-zone__copy">
+                A sheltered limestone courtyard framed by potted Arbequina olive trees, string lanterns, and a dedicated private dining table for group tasting menus and intimate Austin gatherings.
+              </p>
+            </div>
+            <div class="experience-zone__meta">
+              <span>Patio Tables &amp; Private Events</span>
+              <button type="button" class="zone-select-btn" data-zone-name="Covered Olive Courtyard">
+                Prefer This Setting →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         G. Reservation Section
+         ====================================================================== -->
+    <section class="reservation-section" id="reservations" aria-labelledby="reservations-heading">
+      <div class="container">
+        <div class="reservation-layout">
+          <div>
+            <span class="eyebrow">05 / Table Reservations</span>
+            <h2 class="section-title" id="reservations-heading">
+              Reserve Your <em>Evening</em>
+            </h2>
+            <p class="section-lead" style="margin-top:1rem;">
+              We welcome reservations up to 30 days in advance for our main dining room, chef’s hearth counter, and covered olive courtyard. Walk-in guests are always welcome at our bar and lounge.
+            </p>
+
+            <div class="reservation-policy-list">
+              <div class="reservation-policy-item">
+                <strong>Evening &amp; Weekend Aperitivo Seatings</strong>
+                <span>Dinner is served Tuesday through Sunday starting at 5:00 PM. Friday and Saturday include Aperitivo Hour from 4:30 PM. Closed Mondays.</span>
+              </div>
+              <div class="reservation-policy-item">
+                <strong>Large Parties &amp; Private Dining (9+ Guests)</strong>
+                <span>For groups of 9 to 28 guests, please use our Private Dining inquiry option in the Contact section below so our events team can arrange a custom family-style hearth menu.</span>
+              </div>
+              <div class="reservation-policy-item">
+                <strong>Portfolio Demonstration Notice</strong>
+                <span>This form performs complete client-side validation (including past-date and Monday-closure checks) and displays an interactive confirmation preview. No real booking is transmitted.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="form-card__toolbar">
+              <h3 class="form-card__toolbar-title">Request a Table (Demo)</h3>
+              <button type="button" class="sample-fill-btn" id="res-sample-fill">
+                Fill Sample Guest Details
+              </button>
+            </div>
+
+            <form id="reservation-form" novalidate>
+              <div class="form-grid">
+                <!-- Full Name -->
+                <div class="form-field">
+                  <label class="form-label" for="res-name">
+                    Full Name <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="res-name"
+                    name="fullName"
+                    class="form-input"
+                    placeholder="e.g. Clara Vance"
+                    autocomplete="name"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-name-error"
+                  >
+                  <span class="field-error" id="res-name-error" role="alert"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-field">
+                  <label class="form-label" for="res-email">
+                    Email Address <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="res-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="clara@example.com"
+                    autocomplete="email"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-email-error"
+                  >
+                  <span class="field-error" id="res-email-error" role="alert"></span>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-field">
+                  <label class="form-label" for="res-phone">
+                    Phone Number <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="res-phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="(512) 555-0148"
+                    autocomplete="tel"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-phone-error"
+                  >
+                  <span class="field-error" id="res-phone-error" role="alert"></span>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-field">
+                  <label class="form-label" for="res-guests">
+                    Number of Guests <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <select
+                    id="res-guests"
+                    name="guests"
+                    class="form-select"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-guests-error"
+                  >
+                    <option value="">Select party size...</option>
+                    <option value="1">1 Guest (Hearth Counter / Bar)</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8 Guests</option>
+                  </select>
+                  <span class="field-error" id="res-guests-error" role="alert"></span>
+                </div>
+
+                <!-- Reservation Date -->
+                <div class="form-field">
+                  <label class="form-label" for="res-date">
+                    Reservation Date <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="date"
+                    id="res-date"
+                    name="date"
+                    class="form-input"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-date-hint res-date-error"
+                  >
+                  <span class="field-hint" id="res-date-hint">Open Tue–Sun (Closed Mondays)</span>
+                  <span class="field-error" id="res-date-error" role="alert"></span>
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="form-field">
+                  <label class="form-label" for="res-time">
+                    Preferred Time <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <select
+                    id="res-time"
+                    name="time"
+                    class="form-select"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="res-time-error"
+                  >
+                    <option value="">Select seating time...</option>
+                    <option value="17:00">5:00 PM — Early Hearth Seating</option>
+                    <option value="17:30">5:30 PM — Dining Room / Patio</option>
+                    <option value="18:00">6:00 PM — Prime Evening</option>
+                    <option value="18:30">6:30 PM — Prime Evening</option>
+                    <option value="19:00" selected>7:00 PM — Prime Evening</option>
+                    <option value="19:30">7:30 PM — Prime Evening</option>
+                    <option value="20:00">8:00 PM — Evening Seating</option>
+                    <option value="20:30">8:30 PM — Evening Seating</option>
+                    <option value="21:00">9:00 PM — Late Supper</option>
+                    <option value="21:30">9:30 PM — Late Supper</option>
+                  </select>
+                  <span class="field-error" id="res-time-error" role="alert"></span>
+                </div>
+
+                <!-- Optional Special Requests -->
+                <div class="form-field form-field--full">
+                  <label class="form-label" for="res-requests">
+                    Special Requests &amp; Seating Notes <span class="field-hint">(Optional)</span>
+                  </label>
+                  <textarea
+                    id="res-requests"
+                    name="requests"
+                    class="form-textarea"
+                    placeholder="Allergies, dietary preferences, celebration notes, or preferred seating area (Main Dining Room, 8-Seat Hearth Counter, or Olive Courtyard)..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--primary">
+                  Complete Demonstration Booking
+                </button>
+                <button type="button" class="btn btn--outline btn--sm" id="res-reset-btn">
+                  Clear Form
+                </button>
+              </div>
+
+              <p class="form-demo-note">
+                <strong>Note:</strong> Because Ember &amp; Olive is a fictional portfolio showcase, submitting this form runs real client-side validation in your browser and displays a sample confirmation receipt without sending personal data to an external server.
+              </p>
+            </form>
+
+            <!-- Accessible Demonstration Confirmation Receipt -->
+            <div class="demo-confirmation" id="res-demo-confirmation" role="status" aria-live="polite">
+              <span class="demo-confirmation__badge">Demonstration Mode · Validated Locally</span>
+              <h4 class="demo-confirmation__title">Sample Reservation Preview Confirmed</h4>
+              <p class="demo-confirmation__disclaimer">
+                Your form inputs passed all validation rules. In a production restaurant website, this payload would connect to a live booking API (such as OpenTable, Resy, SevenRooms, or a custom Node/PostgreSQL backend).
+              </p>
+              <div class="demo-confirmation__summary" id="res-confirmation-summary"></div>
+              <button type="button" class="btn btn--outline btn--sm" id="res-new-demo-btn">
+                Modify or Test Another Reservation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         H. Opening Hours & Location Section
+         ====================================================================== -->
+    <section class="hours-section" id="hours-location" aria-labelledby="hours-heading">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <span class="eyebrow">06 / Hours &amp; Neighborhood</span>
+            <h2 class="section-title" id="hours-heading">
+              Visit <em>Ember &amp; Olive</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Fictional sample location in Downtown Austin’s Second Street District—two blocks north of Lady Bird Lake.
+          </p>
+        </div>
+
+        <div class="hours-grid">
+          <!-- Opening Hours Card -->
+          <div class="hours-card">
+            <div>
+              <div class="service-status-pill" id="service-status-pill">
+                Evening Service · Wood-Fired Kitchen Open Tue–Sun
+              </div>
+              <h3 class="section-title" style="font-size:2rem;">Sample Opening Hours</h3>
+              <p style="font-size:0.92rem; color:var(--text-slate); margin-top:0.5rem;">
+                Our full wood-fired dinner menu is available in the dining room, hearth counter, and courtyard.
+              </p>
+
+              <table class="hours-table" aria-label="Sample Restaurant Opening Hours">
+                <tbody>
+                  <tr data-day="1">
+                    <th scope="row">Monday</th>
+                    <td>Closed — Hearth Maintenance</td>
+                  </tr>
+                  <tr data-day="2,3,4">
+                    <th scope="row">Tuesday – Thursday</th>
+                    <td>5:00 PM – 10:00 PM</td>
+                  </tr>
+                  <tr data-day="5,6">
+                    <th scope="row">Friday – Saturday</th>
+                    <td>4:30 PM – 11:00 PM</td>
+                  </tr>
+                  <tr data-day="0">
+                    <th scope="row">Sunday</th>
+                    <td>5:00 PM – 9:30 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="story-note-box" style="margin-top:1.75rem;">
+              <strong>Weekend Aperitivo Hour (Fri–Sat · 4:30 PM – 6:00 PM)</strong>
+              Join us in the lounge or olive courtyard for half-price Texas &amp; Mediterranean wines by the glass, wood-charred sourdough flatbreads, and marinated Castelvetrano olives.
+            </div>
+          </div>
+
+          <!-- Fictional Austin Location & Orientation Card -->
+          <div class="location-card">
+            <div>
+              <span class="eyebrow">Fictional Sample Address</span>
+              <h3 class="section-title" style="font-size:2rem;">Second Street District, Austin</h3>
+
+              <address class="location-address-block">
+                <div>
+                  <span class="location-detail-label">Sample Street Address</span>
+                  <span class="location-detail-val">
+                    418 West 2nd Street, Suite 110<br>
+                    Austin, TX 78701, USA<br>
+                    <em>(Fictional Portfolio Location)</em>
+                  </span>
+                </div>
+                <div>
+                  <span class="location-detail-label">Sample Contact Desk</span>
+                  <span class="location-detail-val">
+                    Tel: <a href="tel:+15125550194">(512) 555-0194</a><br>
+                    Email: <a href="mailto:hello@emberandolive-austin.example">hello@emberandolive-austin.example</a><br>
+                    Valet &amp; 2nd St Garage Validation
+                  </span>
+                </div>
+              </address>
+            </div>
+
+            <!-- Custom Architectural SVG Map Illustration (Zero External API Dependency) -->
+            <div class="architectural-map">
+              <svg viewBox="0 0 600 260" role="img" aria-label="Illustrated architectural map showing the fictional Ember and Olive concept location at West 2nd Street and Guadalupe Street in Downtown Austin near Lady Bird Lake">
+                <rect width="600" height="260" fill="#EAE1D3"/>
+                <!-- Lady Bird Lake Water -->
+                <path d="M0 205 Q160 190 340 210 T600 198 L600 260 L0 260 Z" fill="#C7D3CC"/>
+                <text x="28" y="238" fill="#3B4934" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="600" letter-spacing="2">LADY BIRD LAKE · ANN &amp; ROY BUTLER HIKE-AND-BIKE TRAIL</text>
+
+                <!-- Street Grid Lines -->
+                <line x1="0" y1="60" x2="600" y2="60" stroke="#D2C6B2" stroke-width="6"/>
+                <line x1="0" y1="125" x2="600" y2="125" stroke="#FAF6F0" stroke-width="10"/>
+                <line x1="140" y1="0" x2="140" y2="200" stroke="#D2C6B2" stroke-width="6"/>
+                <line x1="310" y1="0" x2="310" y2="205" stroke="#FAF6F0" stroke-width="8"/>
+                <line x1="470" y1="0" x2="470" y2="200" stroke="#D2C6B2" stroke-width="6"/>
+
+                <!-- Street Labels -->
+                <text x="24" y="52" fill="#6B6359" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5">WEST 3RD STREET</text>
+                <text x="24" y="115" fill="#1C1A17" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">WEST 2ND STREET (SECOND STREET DISTRICT)</text>
+                <text x="318" y="28" fill="#6B6359" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5">GUADALUPE ST</text>
+                <text x="478" y="28" fill="#6B6359" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" letter-spacing="1.5">CONGRESS AVE</text>
+
+                <!-- Marker Pin for Ember & Olive -->
+                <circle cx="265" cy="125" r="22" fill="rgba(184, 80, 43, 0.18)"/>
+                <circle cx="265" cy="125" r="9" fill="#B8502B" stroke="#FAF6F0" stroke-width="2.5"/>
+                <rect x="175" y="74" width="180" height="32" rx="3" fill="#1C1A17"/>
+                <text x="265" y="94" text-anchor="middle" fill="#FAF6F0" font-family="Cormorant Garamond, serif" font-size="14" font-weight="700" letter-spacing="1">EMBER &amp; OLIVE (SAMPLE)</text>
+              </svg>
+              <div class="architectural-map__caption">
+                <span>Fictional Orientation Diagram · Downtown Austin, TX</span>
+                <span>Bikes, Capital Metro &amp; Garage Parking Nearby</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         I. Contact Section
+         ====================================================================== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <span class="eyebrow">07 / Inquiries &amp; Private Dining</span>
+            <h2 class="section-title" id="contact-heading">
+              Get in <em>Touch</em>
+            </h2>
+            <p class="section-lead" style="margin-top:1rem;">
+              Planning a private courtyard dinner, wine cellar tasting, or press feature? Reach out using the sample contact channels or test our inquiry form.
+            </p>
+
+            <div class="contact-directory">
+              <div class="contact-directory__item">
+                <span class="contact-directory__role">General Guest Relations (Sample)</span>
+                <a href="mailto:hello@emberandolive-austin.example" class="contact-directory__link">
+                  hello@emberandolive-austin.example
+                </a>
+              </div>
+              <div class="contact-directory__item">
+                <span class="contact-directory__role">Private Dining &amp; Courtyard Events (Sample)</span>
+                <a href="mailto:events@emberandolive-austin.example" class="contact-directory__link">
+                  events@emberandolive-austin.example
+                </a>
+              </div>
+              <div class="contact-directory__item">
+                <span class="contact-directory__role">Sample Host Stand Telephone</span>
+                <a href="tel:+15125550194" class="contact-directory__link">
+                  (512) 555-0194
+                </a>
+              </div>
+            </div>
+
+            <!-- Sample Social Channels -->
+            <div class="social-links-row">
+              <span class="location-detail-label">Sample Social Channels (Interactive Demo)</span>
+              <div class="social-links-list">
+                <button
+                  type="button"
+                  class="social-sample-btn"
+                  data-social-platform="Instagram (@emberandolive.atx)"
+                >
+                  Instagram
+                </button>
+                <button
+                  type="button"
+                  class="social-sample-btn"
+                  data-social-platform="Facebook (/EmberAndOliveAustin)"
+                >
+                  Facebook
+                </button>
+                <button
+                  type="button"
+                  class="social-sample-btn"
+                  data-social-platform="Pinterest (@emberandolivebistro)"
+                >
+                  Pinterest
+                </button>
+              </div>
+              <div class="social-sample-feedback" id="social-sample-feedback" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="form-card">
+            <div class="form-card__toolbar">
+              <h3 class="form-card__toolbar-title">Send a Sample Message</h3>
+              <button type="button" class="sample-fill-btn" id="contact-sample-fill">
+                Fill Sample Inquiry
+              </button>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-label" for="contact-name">
+                    Your Name <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="contactName"
+                    class="form-input"
+                    placeholder="e.g. Marcus Holloway"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="contact-name-error"
+                  >
+                  <span class="field-error" id="contact-name-error" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="contact-email">
+                    Email Address <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="contactEmail"
+                    class="form-input"
+                    placeholder="marcus@example.com"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="contact-email-error"
+                  >
+                  <span class="field-error" id="contact-email-error" role="alert"></span>
+                </div>
+
+                <div class="form-field form-field--full">
+                  <label class="form-label" for="contact-topic">
+                    Inquiry Topic <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <select
+                    id="contact-topic"
+                    name="contactTopic"
+                    class="form-select"
+                    required
+                    aria-invalid="false"
+                    aria-describedby="contact-topic-error"
+                  >
+                    <option value="">Select a topic...</option>
+                    <option value="Private Dining &amp; Courtyard Buyout (9–28 Guests)">Private Dining &amp; Courtyard Buyout (9–28 Guests)</option>
+                    <option value="Dietary &amp; Seasonal Menu Question">Dietary &amp; Seasonal Menu Question</option>
+                    <option value="Wine Cellar &amp; Corkage Policy">Wine Cellar &amp; Corkage Policy</option>
+                    <option value="Press, Media &amp; Culinary Partnerships">Press, Media &amp; Culinary Partnerships</option>
+                    <option value="General Feedback">General Guest Inquiry</option>
+                  </select>
+                  <span class="field-error" id="contact-topic-error" role="alert"></span>
+                </div>
+
+                <div class="form-field form-field--full">
+                  <label class="form-label" for="contact-message">
+                    Message <span class="form-label__req" aria-hidden="true">*Required</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="contactMessage"
+                    class="form-textarea"
+                    placeholder="Tell us about your event date, guest count, or question..."
+                    required
+                    aria-invalid="false"
+                    aria-describedby="contact-message-error"
+                  ></textarea>
+                  <span class="field-error" id="contact-message-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--olive">
+                  Validate &amp; Preview Inquiry
+                </button>
+              </div>
+
+              <p class="form-demo-note">
+                <strong>Portfolio Transparency:</strong> This contact form validates fields locally in the browser and displays a demonstration confirmation state. To deliver emails in production, connect an endpoint such as Formspree, Resend, or a custom backend route.
+              </p>
+            </form>
+
+            <div class="demo-confirmation" id="contact-demo-confirmation" role="status" aria-live="polite">
+              <span class="demo-confirmation__badge">Demonstration Inquiry Validated</span>
+              <h4 class="demo-confirmation__title">Sample Message Preview</h4>
+              <p class="demo-confirmation__disclaimer" id="contact-confirmation-text" style="margin-bottom:0;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       J. Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#top" class="brand-wordmark" style="color:var(--text-on-dark);">
+            <svg class="brand-wordmark__emblem" viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <rect width="64" height="64" rx="4" fill="#26231F" stroke="#38332D" stroke-width="2"/>
+              <path d="M32 11C25 21 20 28 20 36C20 42.6 25.4 48 32 48C38.6 48 44 42.6 44 36C44 28 39 21 32 11ZM32 43C28.1 43 25 39.9 25 36C25 31.8 28.2 26.8 32 21.2C35.8 26.8 39 31.8 39 36C39 39.9 35.9 43 32 43Z" fill="#B8502B"/>
+              <path d="M32 27C29.5 31 28 33.8 28 36.2C28 38.4 29.8 40.2 32 40.2C34.2 40.2 36 38.4 36 36.2C36 33.8 34.5 31 32 27Z" fill="#FAF6F0"/>
+              <path d="M18 50C24 53 40 53 46 50" stroke="#8FA37E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="brand-wordmark__text">
+              <span class="brand-wordmark__name" style="color:var(--text-on-dark);">Ember &amp; Olive</span>
+              <span class="brand-wordmark__sub" style="color:#B4C4A8;">Modern American Bistro · Austin, TX</span>
+            </span>
+          </a>
+          <p class="footer-brand-copy">
+            Wood-fired steaks, daily hand-cut pasta, seasonal Central Texas produce, and estate olive oil in the heart of Austin’s Second Street District.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#story" class="footer-nav-link">Our Story</a></li>
+            <li><a href="#signatures" class="footer-nav-link">Signature Dishes</a></li>
+            <li><a href="#menu" class="footer-nav-link">Full Food &amp; Drink Menu</a></li>
+            <li><a href="#experience" class="footer-nav-link">Dining Experience</a></li>
+            <li><a href="#reservations" class="footer-nav-link">Reserve a Table</a></li>
+            <li><a href="#hours-location" class="footer-nav-link">Hours &amp; Location</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sample Hours</h3>
+          <p class="footer-meta-text">
+            <strong>Tue – Thu:</strong> 5:00 PM – 10:00 PM<br>
+            <strong>Fri – Sat:</strong> 4:30 PM – 11:00 PM<br>
+            <strong>Sunday:</strong> 5:00 PM – 9:30 PM<br>
+            <strong>Monday:</strong> Closed<br><br>
+            <em>Weekend Aperitivo: Fri–Sat 4:30–6:00 PM</em>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Sample Location</h3>
+          <p class="footer-meta-text">
+            418 West 2nd Street, Suite 110<br>
+            Second Street District<br>
+            Austin, TX 78701 (Fictional)<br><br>
+            <a href="tel:+15125550194" class="footer-nav-link">(512) 555-0194</a><br>
+            <a href="mailto:hello@emberandolive-austin.example" class="footer-nav-link">hello@emberandolive-austin.example</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ember &amp; Olive Bistro Concept. Designed &amp; built for web development portfolio presentation.</span>
+        <p class="footer-disclaimer">
+          <strong>Portfolio Disclaimer:</strong> Ember &amp; Olive is a fictional restaurant created exclusively as a web design and front-end development showcase. All menu items, prices, street addresses, and contact details are sample demonstration content.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Back-to-Top Control -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top of page">
+    <span aria-hidden="true">↑</span> Top
+  </button>
+
+  <!-- Main Interactive Script -->
+  <script src="script.js"></script>
+</body>
+</html>
